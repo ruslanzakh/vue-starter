@@ -13,12 +13,13 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "jest"
     ],
     "paths": {
       "@/*": [
         "src/*"
-       ],
+      ],
       "@components/*": [
         "src/components/*"
       ],
@@ -39,7 +40,7 @@
       ],
       "@assets/*": [
         "src/assets/*"
-      ],
+      ]
     },
     "lib": [
       "esnext",
