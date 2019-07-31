@@ -3,7 +3,11 @@ import Router from 'vue-router';
 import Home from '@views/Home/Home.vue';
 
 Vue.use(Router);
-
+/**
+ * WPA doesn't work correctly on local with history mode
+ * But without history mode router will generate hash in url
+ * Maybe WPA and history mode will be work correctly with https protocol
+ */
 export default new Router({
 	mode: 'history',
 	base: process.env.BASE_URL,

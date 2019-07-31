@@ -1,12 +1,18 @@
 <template lang="pug">
 	#app
+		add-pwa
 		router-view(name="content")
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import AddPWA from '@components/add-pwa/AddPWA.vue';
 
-@Component
+@Component({
+	components:{
+		'add-pwa': AddPWA
+	}
+})
 export default class App extends Vue {}
 </script>
 
