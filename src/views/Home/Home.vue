@@ -18,7 +18,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@components/HelloWorld.vue';
+import HelloWorld from '@components/hello-world/HelloWorld.vue';
 import { USER_REQUEST } from '@store/actions/user';
 import { AUTH_REQUEST, AUTH_LOGOUT } from '@store/actions/auth';
 
